@@ -13,5 +13,5 @@ float f2(float x)
 int main()
 {
 	for (float x = M_PI/6-50.0/2097152.0 ; x<=M_PI/6+5.0/2097152.0 ; x += 1.0/2097152.0)
-		printf("%e\t%e\n", f1(x), f2(x));
+		printf("%e\n", f1(x)/f2(x) - 1);
 }
